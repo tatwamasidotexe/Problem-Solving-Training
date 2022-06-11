@@ -1,3 +1,4 @@
+```cpp
 // GNU G++20 11.2.0 (64 bit, winlibs)
 #include <iostream>
 #include <cmath>
@@ -19,3 +20,4 @@ int main()
     std::cout<<countSteps(x,5);
     return 0;
 }
+```
