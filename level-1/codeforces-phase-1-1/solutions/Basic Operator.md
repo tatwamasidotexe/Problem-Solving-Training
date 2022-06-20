@@ -139,3 +139,31 @@ int main()
     return 0;
 }
 ```
+
+# 486 A
+``` cpp
+// GNU G++20 11.2.0 (64 bit, winlibs)
+
+// CODEFORCES 486/A
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{   
+    long long n;
+    while(std::cin>> n){
+        long long sum;
+        if(n%2 == 0) {
+            sum = n/2;
+        } else {
+            sum = -(n+1)/2;
+        }
+
+        std::cout<< sum;
+    }
+    return 0;
+}
+```
