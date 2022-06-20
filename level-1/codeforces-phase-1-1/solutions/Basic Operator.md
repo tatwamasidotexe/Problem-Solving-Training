@@ -79,3 +79,34 @@ int main()
     return 0;
 }
 ```
+
+# 448-A
+``` cpp
+// GNU G++20 11.2.0 (64 bit, winlibs)
+
+// CODEFORCES 448/A
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{        
+    int a1, a2, a3, b1, b2, b3, n;
+
+    while(std::cin>>a1 >> a2 >> a3 >> b1 >> b2 >> b3 >> n){
+        float total_cups = a1+a2+a3;
+        float total_medals = b1+b2+b3;
+        float total_shelves = ceil(total_cups/5) + ceil(total_medals/10);
+
+        if(total_shelves <= n) {
+            std::cout<<"YES";
+        } else {
+            std::cout<<"NO";
+        }
+    }
+    
+    return 0;
+}
+```
