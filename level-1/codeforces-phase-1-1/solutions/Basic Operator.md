@@ -110,3 +110,32 @@ int main()
     return 0;
 }
 ```
+
+# 599 A
+``` cpp
+// GNU G++20 11.2.0 (64 bit, winlibs)
+
+// CODEFORCES 599/A
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{        
+    int d1, d2, d3;
+
+    while(std::cin>>d1 >> d2 >> d3){
+        int a = d1 + d2 + d3;
+        int b = 2*d1 + 2*d2;
+        int c = 2*d2 + 2*d3;
+        int d = 2*d1 + 2*d3;
+
+        std::cout<<min(min(min(a, b), c), d);
+
+    }
+    
+    return 0;
+}
+```
